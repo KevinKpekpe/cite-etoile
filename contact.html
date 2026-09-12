@@ -130,12 +130,20 @@
 
       <!-- Formulaire -->
       <div class="col-lg-8 reveal">
-        <div style="background:var(--navy);padding:3rem;border:1px solid rgba(184,146,58,0.12)">
-          <h3 style="font-family:var(--font-display);color:var(--white);font-size:2rem;font-weight:400;margin-bottom:0.3rem">Envoyez-nous<br/><em style="color:var(--gold-light)">un message</em></h3>
-          <p style="color:rgba(255,255,255,0.35);font-size:0.82rem;margin-bottom:2.5rem">Nous vous répondons dans les plus brefs délais.</p>
+        <div style="background:var(--navy);padding:3rem;border:1px solid rgba(184,146,58,0.2);position:relative">
+          <div class="vip-badge-pill">
+            <i class="bi bi-star-fill text-warning"></i>
+            <span>SERVICE CONSEIL VIP &amp; VISITE DU SITE</span>
+          </div>
+          <h3 style="font-family:var(--font-display);color:var(--white);font-size:2.2rem;font-weight:400;margin-bottom:0.4rem">
+            Planifiez votre<br/><em style="color:var(--gold-light)">visite privée du terrain</em>
+          </h3>
+          <p style="color:rgba(255,255,255,0.6);font-size:0.88rem;margin-bottom:2.5rem;line-height:1.7">
+            Rencontrez un conseiller foncier MJIC Immobilier et bénéficiez d'une visite guidée sur le site de Mbenkana (Mont-Ngafula).
+          </p>
 
           <div id="formSuccess" style="display:none;padding:1rem;background:rgba(34,139,86,0.1);border:1px solid rgba(34,139,86,0.3);color:#4CAF85;font-size:0.88rem;margin-bottom:2rem">
-            <i class="bi bi-check-circle-fill me-2"></i>Merci ! Votre message a bien été envoyé.
+            <i class="bi bi-check-circle-fill me-2"></i>Votre demande de visite privée a été enregistrée avec succès. Notre équipe vous recontactera sous 24h.
           </div>
 
           <form id="quickContactForm" novalidate>
@@ -158,26 +166,23 @@
                   <option value="">Sélectionner...</option>
                   <option>Formule 1 — Cash (2 500 USD)</option>
                   <option>Formule 2 — Crédit 1 an</option>
-                  <option>Formule 3 — Crédit 3 ans</option>
+                  <option>Formule 3 — Crédit 3 ans (Conseillée)</option>
                   <option>Formule 4 — Crédit 5 ans</option>
                   <option>Formule 5 — Crédit 10 ans</option>
-                  <option>Informations générales</option>
+                  <option>Informations générales / Conseil</option>
                 </select>
               </div>
               <div class="col-sm-6 mb-5 ps-sm-3">
                 <label style="display:block;font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Objet de la demande</label>
                 <select name="objet" class="contact-field form-select">
-                  <option value="">Sélectionner...</option>
-                  <option>Réservation / achat de parcelle</option>
-                  <option>Demande d'informations</option>
-                  <option>Modalités de paiement</option>
-                  <option>Visite du site</option>
-                  <option>Partenariat</option>
-                  <option>Autre</option>
+                  <option value="visite">Visite guidée sur le terrain à Mbenkana</option>
+                  <option value="reservation">Réservation / Achat direct de parcelle</option>
+                  <option value="infos">Renseignements juridiques &amp; Titres</option>
+                  <option value="modalites">Modalités de paiement &amp; Crédit</option>
                 </select>
               </div>
               <div class="col-12 mb-5">
-                <label style="display:block;font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Message</label>
+                <label style="display:block;font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Message ou précisions pour la visite</label>
                 <textarea name="message" rows="3" class="contact-field" placeholder="Décrivez votre besoin..." style="resize:none"></textarea>
               </div>
               <div class="col-12 mb-5">
