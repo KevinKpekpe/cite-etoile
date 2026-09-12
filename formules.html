@@ -1,476 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Formules d'acquisition — Cité Étoile du Monde. 5 formules flexibles de 2 500 à 9 000 USD. Calculateur de mensualités inclus." />
-  <title>Formules d'Acquisition — Cité Étoile du Monde</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⭐</text></svg>" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Comparez les cinq formules d'acquisition de parcelles à Cité Étoile du Monde.">
+    <title>Formules d’acquisition — Cité Étoile du Monde</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-
-<!-- NAVBAR -->
-<nav id="mainNav" class="navbar navbar-expand-lg scrolled">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <div class="brand-logo-icon">★</div>
-      <div><div class="brand-text-top">Cité Étoile du Monde</div><div class="brand-text-bottom">MJIC IMMOBILIER SARL</div></div>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav align-items-lg-center gap-lg-1">
-        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">À Propos</a></li>
-        <li class="nav-item"><a class="nav-link" href="projet.html">Le Projet</a></li>
-        <li class="nav-item"><a class="nav-link active-page" href="formules.html">Formules</a></li>
-        <li class="nav-item ms-lg-3"><a class="btn btn-gold btn-sm px-4" href="contact.html"><i class="bi bi-envelope me-1"></i>Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- PAGE HERO -->
-<section class="page-hero">
-  <div class="container" style="position:relative;z-index:1">
-    <span class="page-hero-label">Tarifs &amp; Acquisition</span>
-    <h1 class="page-hero-title">5 Formules pour<br/><em>Acquérir Votre Parcelle</em></h1>
-    <p class="page-hero-subtitle">Des parcelles accessibles à différentes catégories d'acquéreurs, avec des prix promotionnels de lancement à saisir maintenant.</p>
-    <nav class="breadcrumb-nav">
-      <a href="index.html">Accueil</a>
-      <i class="bi bi-chevron-right" style="font-size:0.7rem"></i>
-      <span>Formules</span>
-    </nav>
-  </div>
-</section>
-
-<!-- ═══════════════ SÉCURITÉ FONCIER EN TÊTE DES FORMULES ═══════════════ -->
-<section class="section-pad-sm" style="background:var(--navy-mid);border-bottom:1px solid rgba(184,146,58,0.15)">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10 reveal">
-        <div class="foncier-guarantee-card">
-          <div class="row align-items-center g-4">
-            <div class="col-lg-2 text-center">
-              <div class="foncier-seal-badge mx-auto">
-                <i class="bi bi-patch-check-fill"></i>
-              </div>
-              <span style="font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-light);font-weight:600">SÉCURITÉ 100%</span>
-            </div>
-            <div class="col-lg-10">
-              <h3 style="font-family:var(--font-display);color:var(--white);font-size:1.6rem;margin-bottom:0.3rem">
-                Sécurité Foncier &amp; Titres Certifiés Notariés
-              </h3>
-              <p style="color:rgba(255,255,255,0.7);font-size:0.88rem;line-height:1.7;margin:0">
-                Toutes nos formules incluent l'encadrement notarié officiel, le bornage certifié et la garantie d'absence totale de litige foncier en RDC.
-              </p>
-            </div>
-          </div>
+    <header class="site-header solid">
+        <div class="wrap nav"><a class="brand" href="index.html"><span
+                    class="brand-mark"><span>✦</span></span><span><span class="brand-name">Cité Étoile du
+                        Monde</span><span class="brand-company">MJIC Immobilier SARL</span></span></a><button
+                class="menu-btn">☰</button>
+            <nav class="nav-links"><a href="index.html">Accueil</a><a href="about.html">La société</a><a
+                    href="projet.html">Le projet</a><a href="services.html">Vision urbaine</a><a class="active"
+                    href="formules.html">Acquisition</a><a class="nav-cta" href="contact.html">Visite privée</a></nav>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ALERT PROMO -->
-<div style="background:linear-gradient(135deg,var(--gold-dark),var(--gold));padding:14px;text-align:center">
-  <div class="container">
-    <p style="margin:0;font-size:0.88rem;font-weight:600;color:var(--navy)">
-      <i class="bi bi-clock-fill me-2"></i>
-      <strong>Tarifs promotionnels de lancement</strong> — Prix révisés à la hausse à chaque nouvelle phase d'avancement des travaux.
-    </p>
-  </div>
-</div>
-
-<!-- LES 5 FORMULES VIP -->
-<section class="section-pad" style="background:var(--navy)">
-  <div class="container">
-    <div class="text-center mb-5 reveal">
-      <span class="section-label" style="color:var(--gold)">Opportunités d'Investissement</span>
-      <h2 class="section-title light">Formules d'Acquisition Privilégiées</h2>
-      <div class="divider-gold center"></div>
-      <p style="color:rgba(255,255,255,0.55);max-width:600px;margin:0 auto;font-size:0.95rem">
-        Achetez au comptant avec remise immédiate ou échelonnez votre investissement jusqu'à 10 ans.
-      </p>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- F1 CASH -->
-      <div class="col-md-6 col-lg-4 reveal">
-        <div class="pricing-hero-card">
-          <span class="roi-badge"><i class="bi bi-graph-up-arrow me-1"></i>Remise Cash Immédiate</span>
-          <div class="formule-num">Formule 1</div>
-          <div class="formule-name" style="font-size:1.3rem">CASH COMPTANT</div>
-          <div style="margin:1rem 0">
-            <div class="formule-price" style="font-size:2.5rem">2 500<small style="font-size:1rem"> USD</small></div>
-            <div style="color:rgba(255,255,255,0.85);font-size:0.85rem">Paiement unique · Meilleur tarif</div>
-          </div>
-          
-          <div class="rarity-bar-wrap">
-            <div class="rarity-label">
-              <span>Disponibilité Lot I</span>
-              <strong style="color:var(--gold)">85% Réservé</strong>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="wrap">
+                <p class="eyebrow">Cinq voies vers la propriété</p>
+                <h1>Choisir votre rythme.<br>Préserver votre ambition.</h1>
+                <p class="lead">Du paiement comptant au financement sur dix ans, une structure d’acquisition adaptée à
+                    plusieurs horizons.</p>
             </div>
-            <div class="rarity-progress">
-              <div class="rarity-progress-bar" style="width: 85%"></div>
+        </section>
+        <section class="section">
+            <div class="wrap">
+                <div class="plans">
+                    <article class="plan reveal">
+                        <div class="tag">Comptant</div>
+                        <h3>Cash</h3>
+                        <div class="amount">2 500 $</div>
+                        <p class="monthly">Paiement unique</p>
+                        <ul>
+                            <li>Tarif promotionnel</li>
+                            <li>Positionnement immédiat</li>
+                        </ul>
+                    </article>
+                    <article class="plan reveal">
+                        <div class="tag">12 mois</div>
+                        <h3>Crédit 1 an</h3>
+                        <div class="amount">3 600 $</div>
+                        <p class="monthly">300 USD / mois</p>
+                        <ul>
+                            <li>Échéancier court</li>
+                            <li>12 mensualités</li>
+                        </ul>
+                    </article>
+                    <article class="plan recommended reveal">
+                        <div class="tag">Équilibre</div>
+                        <h3>Crédit 3 ans</h3>
+                        <div class="amount">6 200 $</div>
+                        <p class="monthly">175 USD / mois</p>
+                        <ul>
+                            <li>36 mensualités</li>
+                            <li>Rythme intermédiaire</li>
+                        </ul>
+                    </article>
+                    <article class="plan reveal">
+                        <div class="tag">60 mois</div>
+                        <h3>Crédit 5 ans</h3>
+                        <div class="amount">7 500 $</div>
+                        <p class="monthly">125 USD / mois</p>
+                        <ul>
+                            <li>60 mensualités</li>
+                            <li>Effort mensuel réduit</li>
+                        </ul>
+                    </article>
+                    <article class="plan reveal">
+                        <div class="tag">Long terme</div>
+                        <h3>Crédit 10 ans</h3>
+                        <div class="amount">9 000 $</div>
+                        <p class="monthly">75 USD / mois</p>
+                        <ul>
+                            <li>120 mensualités</li>
+                            <li>Accessibilité maximale</li>
+                        </ul>
+                    </article>
+                </div>
+                <p class="notice" style="margin-top:55px">Les tarifs affichés sont promotionnels et susceptibles
+                    d’évoluer avec l’avancement et la valorisation du projet. Les ventes à crédit sont encadrées par un
+                    contrat précisant échéancier, garanties, pénalités éventuelles et transfert des droits.</p>
+                <div style="margin-top:35px"><a class="btn btn-dark" href="contact.html">Étudier ma formule</a></div>
             </div>
-          </div>
-
-          <div class="formule-divider"></div>
-          <ul class="pricing-features">
-            <li>Paiement immédiat et unique</li>
-            <li>Meilleure valorisation au m²</li>
-            <li>Choix prioritaire de l'emplacement</li>
-            <li>Signature contrat notarié directe</li>
-            <li>Aucun intérêt ni frais de crédit</li>
-          </ul>
-          <a href="contact.html?formule=cash" class="btn btn-outline-gold w-100 mt-auto">
-            <i class="bi bi-arrow-right-circle me-2"></i>Réserver en Cash
-          </a>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <div class="brand-name">Cité Étoile du Monde</div>
+                    <p>Un accès progressif à la propriété.</p>
+                </div>
+                <div><span class="eyebrow">Avant de choisir</span><a href="projet.html">Comprendre le projet</a><a
+                        href="services.html">Voir le programme</a></div>
+                <div><span class="eyebrow">Conseil</span><a href="contact.html">Être rappelé</a></div>
+            </div>
+            <div class="footer-bottom">© 2026 MJIC Immobilier SARL <span>Conditions sous réserve du contrat</span></div>
         </div>
-      </div>
-
-      <!-- F2 CREDIT 1 AN -->
-      <div class="col-md-6 col-lg-4 reveal">
-        <div class="pricing-hero-card">
-          <span class="roi-badge"><i class="bi bi-shield-check me-1"></i>Court Terme Sécurisé</span>
-          <div class="formule-num">Formule 2</div>
-          <div class="formule-name" style="font-size:1.3rem">CRÉDIT 1 AN</div>
-          <div style="margin:1rem 0">
-            <div class="formule-price" style="font-size:2.5rem">3 600<small style="font-size:1rem"> USD</small></div>
-            <div style="color:rgba(255,255,255,0.85);font-size:0.85rem">soit 300 USD / mois pendant 12 mois</div>
-          </div>
-
-          <div class="rarity-bar-wrap">
-            <div class="rarity-label">
-              <span>Disponibilité Lot I</span>
-              <strong style="color:var(--gold)">70% Réservé</strong>
-            </div>
-            <div class="rarity-progress">
-              <div class="rarity-progress-bar" style="width: 70%"></div>
-            </div>
-          </div>
-
-          <div class="formule-divider"></div>
-          <ul class="pricing-features">
-            <li>12 mensualités légères de 300 USD</li>
-            <li>Accès à la parcelle dès le 1er versement</li>
-            <li>Échéancier clair et fixe sans surprise</li>
-            <li>Transfert de droits immédiat à terme</li>
-          </ul>
-          <a href="contact.html?formule=credit-1an" class="btn btn-outline-gold w-100 mt-auto">
-            <i class="bi bi-arrow-right-circle me-2"></i>Choisir 1 An
-          </a>
-        </div>
-      </div>
-
-      <!-- F3 POPULAR -->
-      <div class="col-md-6 col-lg-4 reveal">
-        <div class="pricing-hero-card featured">
-          <div class="pricing-badge"><i class="bi bi-star-fill me-1"></i>Choix Privilégié</div>
-          <span class="roi-badge" style="background:rgba(184,146,58,0.2);color:var(--gold-light)"><i class="bi bi-graph-up-arrow me-1"></i>Plus-Value Estimée : +45%</span>
-          <div class="formule-num">Formule 3</div>
-          <div class="formule-name" style="font-size:1.3rem">CRÉDIT 3 ANS</div>
-          <div style="margin:1rem 0">
-            <div class="formule-price" style="font-size:2.5rem">6 200<small style="font-size:1rem"> USD</small></div>
-            <div style="color:rgba(255,255,255,0.85);font-size:0.85rem">soit 175 USD / mois pendant 36 mois</div>
-          </div>
-
-          <div class="rarity-bar-wrap">
-            <div class="rarity-label">
-              <span style="color:rgba(255,255,255,0.7)">Demande Élevée</span>
-              <strong style="color:var(--gold-light)">92% Réservé</strong>
-            </div>
-            <div class="rarity-progress">
-              <div class="rarity-progress-bar" style="width: 92%"></div>
-            </div>
-          </div>
-
-          <div class="formule-divider"></div>
-          <ul class="pricing-features">
-            <li>36 mensualités ultra équilibrées (175 USD)</li>
-            <li>Accès et mise en valeur immédiate</li>
-            <li>Meilleur rapport souplesse / valorisation</li>
-            <li>Contrat avec garanties notariales</li>
-          </ul>
-          <a href="contact.html?formule=credit-3ans" class="btn btn-gold w-100 mt-auto">
-            <i class="bi bi-star-fill me-2"></i>Choisir cette formule
-          </a>
-        </div>
-      </div>
-
-      <!-- F4 -->
-      <div class="col-md-6 col-lg-6 reveal">
-        <div class="pricing-hero-card">
-          <span class="roi-badge"><i class="bi bi-clock-history me-1"></i>Investissement Sérénité</span>
-          <div class="formule-num">Formule 4</div>
-          <div class="formule-name" style="font-size:1.3rem">CRÉDIT 5 ANS</div>
-          <div style="margin:1rem 0">
-            <div class="formule-price" style="font-size:2.5rem">7 500<small style="font-size:1rem"> USD</small></div>
-            <div style="color:rgba(255,255,255,0.85);font-size:0.85rem">soit 125 USD / mois pendant 60 mois</div>
-          </div>
-
-          <div class="rarity-bar-wrap">
-            <div class="rarity-label">
-              <span>Disponibilité Lot II</span>
-              <strong style="color:var(--gold)">60% Réservé</strong>
-            </div>
-            <div class="rarity-progress">
-              <div class="rarity-progress-bar" style="width: 60%"></div>
-            </div>
-          </div>
-
-          <div class="formule-divider"></div>
-          <ul class="pricing-features">
-            <li>60 mensualités très accessibles de 125 USD</li>
-            <li>Idéal pour se constituer un patrimoine sans effort</li>
-            <li>Garantie d'accompagnement tout au long du contrat</li>
-          </ul>
-          <a href="contact.html?formule=credit-5ans" class="btn btn-outline-gold w-100 mt-auto">
-            <i class="bi bi-arrow-right-circle me-2"></i>Choisir 5 Ans
-          </a>
-        </div>
-      </div>
-
-      <!-- F5 -->
-      <div class="col-md-6 col-lg-6 reveal">
-        <div class="pricing-hero-card">
-          <span class="roi-badge"><i class="bi bi-globe me-1"></i>Spécial Diaspora &amp; Familles</span>
-          <div class="formule-num">Formule 5</div>
-          <div class="formule-name" style="font-size:1.3rem">CRÉDIT 10 ANS</div>
-          <div style="margin:1rem 0">
-            <div class="formule-price" style="font-size:2.5rem">9 000<small style="font-size:1rem"> USD</small></div>
-            <div style="color:rgba(255,255,255,0.85);font-size:0.85rem">soit 75 USD / mois pendant 120 mois</div>
-          </div>
-
-          <div class="rarity-bar-wrap">
-            <div class="rarity-label">
-              <span>Disponibilité Lot II</span>
-              <strong style="color:var(--gold)">78% Réservé</strong>
-            </div>
-            <div class="rarity-progress">
-              <div class="rarity-progress-bar" style="width: 78%"></div>
-            </div>
-          </div>
-
-          <div class="formule-divider"></div>
-          <ul class="pricing-features">
-            <li>120 mensualités minimales de 75 USD seulement</li>
-            <li>Construisez l'avenir de vos enfants sans impacter votre budget</li>
-            <li>Accompagnement personnalisé et sécurisé</li>
-          </ul>
-          <a href="contact.html?formule=credit-10ans" class="btn btn-outline-gold w-100 mt-auto">
-            <i class="bi bi-arrow-right-circle me-2"></i>Choisir 10 Ans
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- TABLEAU COMPARATIF -->
-<section class="section-pad" style="background:var(--white)">
-  <div class="container">
-    <div class="text-center mb-5 reveal">
-      <span class="section-label">Comparaison</span>
-      <h2 class="section-title">Tableau récapitulatif</h2>
-      <div class="divider-gold center"></div>
-    </div>
-    <div class="reveal" style="overflow-x:auto;border-radius:var(--radius-lg);box-shadow:var(--shadow-card);border:1px solid rgba(201,168,76,0.1)">
-      <table class="table table-hover mb-0" style="min-width:600px">
-        <thead style="background:var(--navy)">
-          <tr>
-            <th style="color:var(--gold);font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;padding:1.2rem 1.5rem;border:none">Formule</th>
-            <th style="color:var(--gold);font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;padding:1.2rem;border:none;text-align:center">Prix total</th>
-            <th style="color:var(--gold);font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;padding:1.2rem;border:none;text-align:center">Mensualité</th>
-            <th style="color:var(--gold);font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;padding:1.2rem;border:none;text-align:center">Durée</th>
-            <th style="color:var(--gold);font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;padding:1.2rem;border:none;text-align:center">Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding:1rem 1.5rem;font-weight:600;color:var(--navy)">Formule 1 — Cash</td>
-            <td style="padding:1rem;text-align:center;font-family:var(--font-display);font-weight:700;color:var(--gold);font-size:1.1rem">2 500 USD</td>
-            <td style="padding:1rem;text-align:center;color:var(--gray-text)">—</td>
-            <td style="padding:1rem;text-align:center"><span class="phase-badge active"><span class="dot"></span>Immédiat</span></td>
-            <td style="padding:1rem;text-align:center"><a href="contact.html" class="btn btn-sm btn-gold px-3">Choisir</a></td>
-          </tr>
-          <tr>
-            <td style="padding:1rem 1.5rem;font-weight:600;color:var(--navy)">Formule 2 — Crédit 1 an</td>
-            <td style="padding:1rem;text-align:center;font-family:var(--font-display);font-weight:700;color:var(--navy);font-size:1.1rem">3 600 USD</td>
-            <td style="padding:1rem;text-align:center;font-weight:600;color:var(--navy)">300 USD/mois</td>
-            <td style="padding:1rem;text-align:center;color:var(--gray-text)">12 mois</td>
-            <td style="padding:1rem;text-align:center"><a href="contact.html" class="btn btn-sm btn-outline-gold px-3">Choisir</a></td>
-          </tr>
-          <tr style="background:rgba(201,168,76,0.04)">
-            <td style="padding:1rem 1.5rem;font-weight:700;color:var(--navy)"><i class="bi bi-star-fill text-warning me-1" style="font-size:0.75rem"></i>Formule 3 — Crédit 3 ans</td>
-            <td style="padding:1rem;text-align:center;font-family:var(--font-display);font-weight:700;color:var(--gold);font-size:1.1rem">6 200 USD</td>
-            <td style="padding:1rem;text-align:center;font-weight:700;color:var(--gold)">175 USD/mois</td>
-            <td style="padding:1rem;text-align:center;color:var(--gray-text)">36 mois</td>
-            <td style="padding:1rem;text-align:center"><a href="contact.html" class="btn btn-sm btn-gold px-3">Choisir</a></td>
-          </tr>
-          <tr>
-            <td style="padding:1rem 1.5rem;font-weight:600;color:var(--navy)">Formule 4 — Crédit 5 ans</td>
-            <td style="padding:1rem;text-align:center;font-family:var(--font-display);font-weight:700;color:var(--navy);font-size:1.1rem">7 500 USD</td>
-            <td style="padding:1rem;text-align:center;font-weight:600;color:var(--navy)">125 USD/mois</td>
-            <td style="padding:1rem;text-align:center;color:var(--gray-text)">60 mois</td>
-            <td style="padding:1rem;text-align:center"><a href="contact.html" class="btn btn-sm btn-outline-gold px-3">Choisir</a></td>
-          </tr>
-          <tr>
-            <td style="padding:1rem 1.5rem;font-weight:600;color:var(--navy)">Formule 5 — Crédit 10 ans</td>
-            <td style="padding:1rem;text-align:center;font-family:var(--font-display);font-weight:700;color:var(--navy);font-size:1.1rem">9 000 USD</td>
-            <td style="padding:1rem;text-align:center;font-weight:600;color:var(--navy)">75 USD/mois</td>
-            <td style="padding:1rem;text-align:center;color:var(--gray-text)">120 mois</td>
-            <td style="padding:1rem;text-align:center"><a href="contact.html" class="btn btn-sm btn-outline-gold px-3">Choisir</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- CALCULATEUR -->
-<section class="section-pad" style="background:var(--gray-light)">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-7 reveal">
-        <div class="calculator-wrap">
-          <div class="text-center mb-4">
-            <span class="section-label">Outil interactif</span>
-            <h3 class="section-title" style="font-size:1.8rem">Calculateur de mensualités</h3>
-            <div class="divider-gold center"></div>
-            <p style="font-size:0.9rem;color:var(--gray-text)">Sélectionnez une formule et estimez vos mensualités</p>
-          </div>
-          <div class="mb-3">
-            <label class="form-label fw-600" style="color:var(--navy);font-weight:600">Choisissez votre formule</label>
-            <select id="calcFormule" class="form-select" onchange="updateCalc()">
-              <option value="1">Formule 1 — Cash (2 500 USD)</option>
-              <option value="2">Formule 2 — Crédit 1 an (300 USD/mois)</option>
-              <option value="3" selected>Formule 3 — Crédit 3 ans (175 USD/mois)</option>
-              <option value="4">Formule 4 — Crédit 5 ans (125 USD/mois)</option>
-              <option value="5">Formule 5 — Crédit 10 ans (75 USD/mois)</option>
-            </select>
-          </div>
-          <div class="calculator-result">
-            <div style="font-size:0.78rem;color:rgba(255,255,255,0.4);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem">Votre mensualité estimée</div>
-            <div class="calc-amount" id="calcAmount">175 USD</div>
-            <div style="font-size:0.82rem;color:rgba(255,255,255,0.4);margin-top:0.3rem" id="calcDuration">sur 36 mois · Total : 6 200 USD</div>
-            <a href="contact.html" class="btn btn-gold mt-3 px-4">
-              <i class="bi bi-arrow-right-circle me-2"></i>Choisir cette formule
-            </a>
-          </div>
-          <p style="font-size:0.78rem;color:var(--gray-text);text-align:center;margin-top:1rem">
-            <i class="bi bi-info-circle me-1"></i>
-            Les ventes à crédit sont encadrées par des contrats précisant les modalités de paiement, l'échéancier, les garanties et les conditions de transfert des droits.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- MENTIONS LEGALES -->
-<section style="background:var(--navy);padding:50px 0">
-  <div class="container">
-    <div class="reveal" style="background:rgba(255,255,255,0.04);border:1px solid rgba(201,168,76,0.2);border-radius:var(--radius-lg);padding:2rem">
-      <div class="row align-items-start g-4">
-        <div class="col-md-1 text-center">
-          <i class="bi bi-shield-exclamation" style="font-size:2.5rem;color:var(--gold)"></i>
-        </div>
-        <div class="col-md-11">
-          <h5 style="color:var(--gold);margin-bottom:0.8rem">Informations importantes sur les prix</h5>
-          <ul style="color:rgba(255,255,255,0.6);font-size:0.88rem;line-height:2;padding-left:1.2rem;margin:0">
-            <li>Les prix affichés sont des <strong style="color:var(--white)">tarifs promotionnels de lancement</strong> susceptibles d'être révisés à la hausse selon l'avancement du projet.</li>
-            <li>Plus tôt vous vous positionnez, plus vous bénéficiez des conditions promotionnelles en vigueur.</li>
-            <li>Les ventes à crédit sont encadrées par des contrats précisant les modalités de paiement, l'échéancier, les garanties et les pénalités éventuelles.</li>
-            <li>Les conditions de transfert des droits sont précisées dans chaque contrat individuel.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section style="background:var(--navy);padding:60px 0;text-align:center;border-top:1px solid rgba(201,168,76,0.15)">
-  <div class="container reveal">
-    <h2 style="font-family:var(--font-display);color:var(--white);font-size:clamp(1.5rem,3vw,2.2rem);margin-bottom:1rem">Prêt à réserver votre parcelle ?</h2>
-    <p style="color:rgba(255,255,255,0.55);max-width:480px;margin:0 auto 2rem">Contactez notre équipe commerciale dès aujourd'hui pour sécuriser votre position.</p>
-    <div class="d-flex flex-wrap justify-content-center gap-3">
-      <a href="contact.html" class="btn btn-gold"><i class="bi bi-envelope me-2"></i>Nous contacter</a>
-      <a href="https://wa.me/243XXXXXXXXX" target="_blank" class="btn btn-outline-white"><i class="bi bi-whatsapp me-2"></i>WhatsApp direct</a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-4">
-        <div class="d-flex align-items-center gap-3 mb-4"><div class="brand-logo-icon">★</div><div><div class="footer-brand-name">Cité Étoile du Monde</div><div class="footer-brand-sub">MJIC IMMOBILIER SARL</div></div></div>
-        <p class="footer-tagline">"Votre parcelle. Votre maison.<br/>Votre cité. Votre avenir."</p>
-        <p style="font-size:0.78rem;color:rgba(255,255,255,0.28);margin-top:1rem;line-height:1.7">Projet à Mbenkana, Mont-Ngafula, Kinshasa — RDC.</p>
-      </div>
-      <div class="col-6 col-lg-2 offset-lg-1">
-        <h6 class="footer-heading">Navigation</h6>
-        <ul class="footer-links">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="about.html">À Propos</a></li>
-          <li><a href="projet.html">Le Projet</a></li>
-          <li><a href="formules.html">Formules</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2">
-        <h6 class="footer-heading">Contact</h6>
-        <div class="footer-contact-item"><i class="bi bi-telephone"></i><span>+243 XXX XXX XXX</span></div>
-        <div class="footer-contact-item"><i class="bi bi-whatsapp"></i><span>WhatsApp disponible</span></div>
-        <div class="footer-contact-item"><i class="bi bi-envelope"></i><span>contact@mjic-immobilier.cd</span></div>
-        <div class="footer-contact-item"><i class="bi bi-geo-alt"></i><span>Kinshasa, RDC</span></div>
-      </div>
-      <div class="col-lg-3">
-        <h6 class="footer-heading">Légal</h6>
-        <p style="font-size:0.78rem;color:rgba(255,255,255,0.28);line-height:1.8">Prix promotionnels susceptibles de révision. Ventes encadrées par contrats.</p>
-        <a href="#" style="font-size:0.75rem;color:rgba(255,255,255,0.35)">Mentions légales</a>
-      </div>
-    </div>
-    <hr class="footer-divider" />
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 footer-copy">
-      <span>© 2026 MJIC IMMOBILIER SARL — Tous droits réservés.</span>
-      <span>Cité Étoile du Monde · Kinshasa, RDC</span>
-    </div>
-  </div>
-</footer>
-
-<a id="whatsapp-btn" href="https://wa.me/243XXXXXXXXX" target="_blank" rel="noopener" title="WhatsApp">
-  <span class="whatsapp-pulse"></span>
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-</a>
-<button id="scrollTop" onclick="scrollToTop()" title="Retour en haut" style="display:none;align-items:center;justify-content:center"><i class="bi bi-arrow-up"></i></button>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
-<script>
-const formules = {
-  '1': { amount: '2 500 USD', duration: 'Paiement unique · Cash', label: 'au comptant' },
-  '2': { amount: '300 USD', duration: 'sur 12 mois · Total : 3 600 USD', label: '/mois' },
-  '3': { amount: '175 USD', duration: 'sur 36 mois · Total : 6 200 USD', label: '/mois' },
-  '4': { amount: '125 USD', duration: 'sur 60 mois · Total : 7 500 USD', label: '/mois' },
-  '5': { amount: '75 USD', duration: 'sur 120 mois · Total : 9 000 USD', label: '/mois' },
-};
-function updateCalc() {
-  const v = document.getElementById('calcFormule').value;
-  document.getElementById('calcAmount').textContent = formules[v].amount;
-  document.getElementById('calcDuration').textContent = formules[v].duration;
-}
-</script>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
